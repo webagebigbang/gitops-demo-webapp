@@ -1,5 +1,12 @@
 # Building the Docker Image
 
+## Install Java 11
+Run this command.
+
+```
+sudo apt install openjdk-11-jre-headless
+```
+
 ## Build the Application
 
 Run:
