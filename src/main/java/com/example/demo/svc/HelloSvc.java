@@ -16,6 +16,19 @@ public class HelloSvc {
         output.put("greeting", "Hello!");
         output.put("requestCount", ++requestCount);
 
+        //Access secrets using environment variables
+        var dbUser = System.getenv("DB_USER");
+
+        if (dbUser != null) {
+            output.put("databaseUser", dbUser);
+        }
+        
+        var dbPass = System.getenv("DB_PASSWORD");
+
+        if (dbPass != null) {
+            output.put("databasePassword", dbPass);
+        }
+        
         return output;
     }
 }
