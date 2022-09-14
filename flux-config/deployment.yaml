@@ -3,7 +3,7 @@ kind: Secret
 metadata:
   name: mysqlcreds
 type: Opaque
-data:
+stringData:
   USER_NAME: daffy
   PASSWORD: duck
 
